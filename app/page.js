@@ -17,11 +17,21 @@ const Home = () => {
           </button>
         </div>
         <div className="w-[500px] h-12 relative grayscale">
-          <Image src="/images/brands.png" alt="brands" fill className="" />
+          <Image
+            src="/images/brands.png"
+            alt="brands"
+            fill
+            className=" object-contain"
+          />
         </div>
       </div>
       <div className="relative flex-1">
-        <Image src="/images/hero.gif" alt="hero" fill className="heroimage" />
+        <Image
+          src="/images/hero.gif"
+          alt="hero"
+          fill
+          className=" object-contain"
+        />
       </div>
     </div>
   );
