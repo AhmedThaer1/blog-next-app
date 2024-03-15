@@ -3,6 +3,7 @@ import { useState } from "react";
 import { NavLinks } from "@/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const [open, setopen] = useState(false);
@@ -41,12 +42,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile */}
-        <button
-          className="block md:hidden"
+        <Image
           onClick={() => setopen((prev) => !prev)}
-        >
-          Menu
-        </button>
+          className=""
+          src={"/images/menu.png"}
+          alt="menuIcon"
+          width={30}
+          height={30}
+        />
         {open && (
           <div className="absolute top-24 right-0 w-2/4 h-screen bg-[--bg] flex md:hidden flex-col items-center justify-center gap-3">
             {NavLinks.map((link) => (
