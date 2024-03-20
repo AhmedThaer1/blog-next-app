@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Mobile */}
         <Image
           onClick={() => setopen((prev) => !prev)}
-          className=""
+          className="md:hidden cursor-pointer"
           src={"/images/menu.png"}
           alt="menuIcon"
           width={30}

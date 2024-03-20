@@ -1,7 +1,7 @@
 import Image from "next/image";
 const AboutPage = () => {
   return (
-    <div className="flex gap-24">
+    <div className="flex flex-col md:flex-row gap-24">
       <div className="flex-1 flex flex-col gap-12">
         <h2 className="text-[--btn]">About US</h2>
         <h1 className="text-6xl">
@@ -13,16 +13,16 @@ const AboutPage = () => {
           Special Team best consulting & finance solution provider. Wide range
           of web and software development services.
         </p>
-        <div className="flex items-center justify-between">
-          <div className="flex flex-col gap-3">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col gap-3 justify-center items-center">
             <h1 className="text-[--btn] font-bold text-lg">10 K+</h1>
             <p>Year of experience</p>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 justify-center items-center">
             <h1 className="text-[--btn] font-bold text-lg">10 K+</h1>
             <p>Year of experience</p>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 justify-center items-center">
             <h1 className="text-[--btn] font-bold text-lg">10 K+</h1>
             <p>Year of experience</p>
           </div>
